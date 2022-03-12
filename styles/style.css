@@ -303,7 +303,7 @@ header .header_content {
       grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
   margin-top: 10vh;
-  padding-top: 10rem;
+  padding-top: 5rem;
   padding-bottom: 26rem;
 }
 
@@ -1149,7 +1149,7 @@ main .section_content {
   padding-bottom: 3rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .contact_section .section_content .contact_container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1225,7 +1225,7 @@ main .section_content {
   -o-border-radius: 5px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .contact_section .section_content .contact_container .right_contact {
     -ms-grid-row: 1;
     grid-row: 1;
@@ -1239,6 +1239,8 @@ main .section_content {
 }
 
 .contact_section .section_content .contact_container .right_contact .map iframe {
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1250,7 +1252,7 @@ main .section_content {
   position: relative;
 }
 
-.footer h6 {
+.footer span {
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--clr-white);
@@ -1372,6 +1374,7 @@ main .section_content {
 
 .footer .footer_end .f_end_content p span {
   color: var(--clr-primary);
+  font-size: inherit;
 }
 
 .footer .footer_end .f_end_content .icons {
@@ -1391,6 +1394,6 @@ main .section_content {
 
 .footer .footer_end .f_end_content .icons a {
   padding: 0 1rem;
-  font-size: var(--font-lg);
+  font-size: 2.4rem;
 }
 /*# sourceMappingURL=style.css.map */

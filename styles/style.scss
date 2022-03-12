@@ -249,7 +249,7 @@ header {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
       margin-top: 10vh;
-      padding-top: 10rem;
+      padding-top: 5rem;
       padding-bottom: 26rem;
 
       @media screen and (max-width: 480px) {
@@ -984,7 +984,7 @@ main {
          grid-gap: 4rem;
          padding-bottom: 3rem;
 
-         @media screen and (max-width: 480px) {
+         @media screen and (max-width: 768px) {
             grid-template-columns: 1fr;
          }
 
@@ -1052,7 +1052,7 @@ main {
             -ms-border-radius: 5px;
             -o-border-radius: 5px;
 
-            @media screen and (max-width: 480px) {
+            @media screen and (max-width: 768px) {
                grid-row: 1;
             }
             .map {
@@ -1060,6 +1060,8 @@ main {
                height: 100%;
                padding: 1rem;
                iframe {
+                  width: 100%;
+                  height: 100%;
                   border-radius: 5px;
                   -webkit-border-radius: 5px;
                   -moz-border-radius: 5px;
@@ -1076,7 +1078,7 @@ main {
 .footer {
    position: relative;
 
-   h6 {
+   span {
       font-size: 1.8rem;
       font-weight: 600;
       color: var(--clr-white);
@@ -1161,6 +1163,7 @@ main {
 
             span {
                color: var(--clr-primary);
+               font-size: inherit;
             }
          }
 
@@ -1174,7 +1177,7 @@ main {
 
             a {
                padding: 0 1rem;
-               font-size: var(--font-lg);
+               font-size: 2.4rem;
             }
          } // end of icons class
       } //end of f-end-content class
